@@ -20,8 +20,6 @@ header nav .nav-right a {
   padding: 5px 10px;
   margin: 0px 5px;
 }
-header nav .nav-right a i {
-}
 header nav .nav-left .register-login-btn {
   border: 1px solid #666;
   padding: 5px 5px;
@@ -46,8 +44,6 @@ header nav .nav-left .register-login-btn a {
 .slider {
   position: relative;
   font-size: 1em;
-}
-.slider .slides {
 }
 .slider .slides .item {
   position: relative;
@@ -134,8 +130,6 @@ header nav .nav-left .register-login-btn a {
   color: #444;
   font-weight: bold;
 }
-.shopping-card .buttons .right .price {
-}
 .shopping-card .buttons .left {
   display: flex;
 }
@@ -184,8 +178,6 @@ header nav .nav-left .register-login-btn a {
   display: inline-block;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-}
-.supper-offer-box .body {
 }
 .supper-offer-box .body .imgage-container {
   text-align: center;
@@ -239,6 +231,50 @@ header nav .nav-left .register-login-btn a {
 .banner img {
   width: 26em;
   height: 29em;
-  border-radius: ;
+  border-radius: 5px;
   box-shadow: 0px 2px 8px 0px darkgray;
+}
+
+/*  footer  */
+
+footer {
+  background-color: #b0e0e6;
+  font-size: 1em;
+}
+footer .right {
+  padding: 40px;
+}
+footer .right .title {
+  padding: 20px 0px;
+  color: #444;
+  font-size: 1.5em;
+}
+footer .right .des {
+  color: #444;
+  line-height: 2em;
+  font-size: 0.9em;
+}
+footer .left {
+  padding: 40px;
+}
+footer .left .title {
+  padding: 10px 0px;
+  font-size: 0.9em;
+  color: #444;
+}
+footer .left .socials {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+  margin-top: 20px;
+}
+footer .left .socials a {
+  color: #444;
+  font-size: 1.2em;
+}
+footer .buttom {
+  background-color: #5a878d;
+  text-align: center;
+  color: rgb(194, 194, 194);
+  padding: 15px;
 }
