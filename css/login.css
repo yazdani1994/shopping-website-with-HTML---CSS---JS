@@ -11,8 +11,6 @@
   color: #444;
   margin: 20px 30px;
 }
-.login-box form {
-}
 .login-box form .input-group {
   margin: 30px 0px;
 }
@@ -27,8 +25,6 @@
   padding: 10px;
   width: 100%;
   outline: none;
-}
-.login-box form .do-you-have {
 }
 .login-box form .do-you-have a {
   color: blue;
@@ -55,8 +51,6 @@
 .login-box .social-us a {
   color: #444;
   font-size: 1.9em;
-}
-.login-box .social-us a i {
 }
 .login-image-container {
   display: flex;
