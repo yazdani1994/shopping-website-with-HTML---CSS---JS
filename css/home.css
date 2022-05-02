@@ -8,7 +8,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   padding: 10px 15px;
-  font-size: 1em;
+  font-size: 1.2em;
   background-color: powderblue;
 }
 header nav .nav-right {
@@ -247,19 +247,19 @@ footer .right {
 footer .right .title {
   padding: 20px 0px;
   color: #444;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 footer .right .des {
   color: #444;
   line-height: 2em;
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 footer .left {
   padding: 40px;
 }
 footer .left .title {
   padding: 10px 0px;
-  font-size: 0.9em;
+  font-size: 1.2em;
   color: #444;
 }
 footer .left .socials {
@@ -275,6 +275,8 @@ footer .left .socials a {
 footer .buttom {
   background-color: #5a878d;
   text-align: center;
-  color: rgb(194, 194, 194);
+  color: rgb(242, 242, 242);
   padding: 15px;
 }
+
+/*  login  */
