@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/flexboxgrid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <title>shopping website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-right">
+          <a href=""><i class="far fa-user"></i></a>
+          <a href=""><i class="fas fa-shopping-cart"></i></a>
+          <a href=""><i class="fas fa-home"></i></a>
+          <a href=""><i class="fas fa-search"></i></a>
+        </div>
+        <div class="nav-left">
+          <div class="register-login-btn">
+            <i class="fas fa-user"></i>
+            <a href="">ثبت نام / ورود</a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="slider">
+        <div class="slides">
+          <div class="item active" id="slide1">
+            <img src="./img/banner-1-1.jpg" alt="" />
+            <span>صدا های بی نظیر</span>
+          </div>
+          <div class="item" id="slide2">
+            <img src="./img/banner-1-2.jpg" alt="" />
+            <span>ضدآب و ضدضربه</span>
+          </div>
+          <div class="item" id="slide3">
+            <img src="./img/banner-1-3.jpg" alt="" />
+            <span>بهترین ها را از ما بخواهید</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <i onclick="setSlide('slide1', 1)" class="fas fa-circle"></i>
+          <i onclick="setSlide('slide2', 2)" class="fas fa-circle"></i>
+          <i onclick="setSlide('slide3', 3)" class="fas fa-circle"></i>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="product-sec-new">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="./img/1.jpg" alt="" />
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="title">هندزفری بیسیم اپل</div>
+              <div class="buttons">
+                <div class="right">
+                  <span class="price">۸۰۰.۰۰۰ تومان</span>
+                </div>
+                <div class="left">
+                  <div class="extend-btn">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="./img/2.jpg" alt="" />
+                <span class="hot-offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="title">هندزفری بیسیم شیائومی</div>
+              <div class="buttons">
+                <div class="right">
+                  <span class="price">۵۰۰.۰۰۰ تومان</span>
+                </div>
+                <div class="left">
+                  <div class="extend-btn">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="./img/3.jpg" alt="" />
+                <span class="hot-offer">پیشنهاد ویژه</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="title">هندزفری بیسیم وان مور</div>
+              <div class="buttons">
+                <div class="right">
+                  <span class="price">۳۵۰.۰۰۰ تومان</span>
+                </div>
+                <div class="left">
+                  <div class="extend-btn">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="shopping-card">
+              <div class="img-sec">
+                <img src="./img/4.jpg" alt="" />
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="title">هندزفری بیسیم جی بی ال</div>
+              <div class="buttons">
+                <div class="right">
+                  <span class="price">۹۶۰.۰۰۰ تومان</span>
+                </div>
+                <div class="left">
+                  <div class="extend-btn">
+                    <a class="b-text" href="">خرید</a>
+                    <a class="b-icon" href=""
+                      ><i class="fas fa-shopping-cart"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="super-offer-section">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="supper-offer-box">
+              <span class="supper-offer-box-title">پیشنهاد شگفت انگیز</span>
+              <div class="body">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="imgage-container">
+                      <img src="./img/1634644566_1.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="spesification">
+                      <div class="price-row">
+                        <div class="price">۱ میلیون تومان</div>
+                        <div class="off">٪۶۰ تخفیف</div>
+                      </div>
+                      <div class="title">هندزفری وان مور مدل ۲۰۲۰</div>
+                      <div class="counter-down">
+                        <span id="seconds">59</span> :
+                        <span id="minutes">59</span> :
+                        <span id="hours">23</span>
+                      </div>
+                      <div class="remaining-time">
+                        زمان باقیمانده تا پایان سفارش
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-ls-3">
+            <div class="banner">
+              <img src="./img/Super-Sale.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
