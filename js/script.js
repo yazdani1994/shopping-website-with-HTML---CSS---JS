@@ -36,27 +36,25 @@ setInterval(() => {
   setTime();
 }, 1000);
 
-////////////////       user panel        /////////////////////////////
+////////////////       user panel        //////////////////////
 
-function togglePane() {
+function togglePanel() {
   let panel = document.querySelector("#panel");
   console.log(panel.className);
   if (panel.className == "panel") {
     panel.classList.replace("panel", "panel-min");
-    flag = 0;
     active_user_name_arrow(0);
     activeTextMenuBtn(0);
     activeUserDetails(0);
   } else {
     panel.classList.replace("panel-min", "panel");
-    flag = 1;
     active_user_name_arrow(1);
     activeTextMenuBtn(1);
   }
 }
 function activeTextMenuBtn(flag) {
-  let btn_menu_items = document.querySelectorAll(".menu-btn .item");
-  let item_texts = document.querySelectorAll(".menu-btn .item span");
+  let btn_menu_items = document.querySelectorAll(".menu-btns .item");
+  let item_texts = document.querySelectorAll(".menu-btns .item span");
   if (flag) {
     btn_menu_items.forEach((ele) => {
       ele.style.justifyContent = "flex-start";
@@ -111,3 +109,30 @@ function active_user_name_arrow(flag) {
     imgNameBox.style.justifyContent = "center";
   }
 }
+
+////////// from chartjs.org  ////////////////////
+
+var ctx = document.getElementById("myChart").getContext("2d");
+var myChart = new Chart(ctx, {
+  type: "polarArea",
+  data: {
+    labels: ["هندزفری", "هدفون", "کیف هندزفری", "محافظ", "شارژر"],
+    datasets: [
+      {
+        label: "",
+        data: [12, 19, 3, 5, 2],
+        backgroundColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(255, 162, 132, 1)",
+          "rgba(255, 765, 132, 1)",
+          "rgba(23, 111, 765, 1)",
+          "rgba(255, 99, 234, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {},
+  },
+});
